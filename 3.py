@@ -1,4 +1,4 @@
-class Cars:
+class CarsCollection:
     def __init__(self, make, model):
         self.make = make
         self.model = model
@@ -16,13 +16,13 @@ class Cars:
         self.model = ""
 
 
-toyota = Cars("Toyota", "Avensis")
+toyota = CarsCollection("Toyota", "Avensis")
 toyota.type()
 
 
-class SuperCars(Cars):
+class SuperCar(CarsCollection):
     def __init__(self, make, model, top_speed):
-        super(SuperCars, self).__init__(make, model)
+        super(SuperCar, self).__init__(make, model)
         self.top_speed = top_speed
         print("This is {} {}. This car top speed is {}".format(self.make, self.model, self.top_speed))
 
@@ -30,6 +30,6 @@ class SuperCars(Cars):
         print("This car is Awesome")
 
 
-pagani = SuperCars("Pagani", "Zonda", "217mp/h")
+pagani = SuperCar("Pagani", "Zonda", "217mp/h")
 pagani.color()
 pagani.type()
