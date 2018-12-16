@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 your_name = input("Hi! Whats your name?")
-my_little_name = "igor"
-my_big_name = "Igor"
-if (my_little_name == your_name) or (my_big_name == your_name):
-    print("Hi! I like yours name :D")
+my_name = "igor"
+if my_name == your_name.lower():
+    print("Hi! I like yours name {} :D".format(your_name.title()))
 else:
-    print("Hi! {}".format(your_name))
+    print("Hi! {}".format(your_name.title()))
 
 number = int(input("Send me number"))
 
